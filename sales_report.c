@@ -49,7 +49,7 @@ int main(){
     scanf("%s", &nameOfFile); //stores the name of the file to the nameOfFile character array defined above(max character length 50)
     FILE *file = fopen(nameOfFile, "r"); //opens the file provided by the user and reads it('r')
 
-    for(i = 0; i < months; i++){ //for loop that iterates from 0 to 11 (12 iterations). This will get the data for each of the 12 months
+    for(i = 0; i < 12; i++){ //for loop that iterates from 0 to 11 (12 iterations). This will get the data for each of the 12 months
         fscanf(nameOfFile, "%f", salesFigures[i]); //stores the number at each row of the file to the salesFigures array
     }
 
